@@ -1,2 +1,1 @@
-db.createCollection("pages")
-db.createCollection("resources")
+db.createCollection("pages");
