@@ -1,0 +1,31 @@
+{
+  "name": "backend",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "start": "node dist/main.js",
+    "dev": "CONFIG_PATH=./config.test.json tsx src/main.ts",
+    "test": "CONFIG_PATH=./config.test.json jest --runInBand --detectOpenHandles",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "@stylistic/eslint-plugin": "^2.8.0",
+    "@types/jest": "^29.5.13",
+    "@types/node": "^22.6.1",
+    "@types/supertest": "^6.0.2",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "eslint": "^9.11.1",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "tsx": "^4.19.1",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "d-flow-backend": "github:digitao-io/d-flow-backend"
+  }
+}
