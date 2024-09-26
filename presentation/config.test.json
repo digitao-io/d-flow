@@ -1,0 +1,5 @@
+{
+  "staticPath": "./dist/client",
+  "htmlTemplatePath": "./dist/client/index.html",
+  "port": 3001
+}

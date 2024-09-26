@@ -1,0 +1,39 @@
+{
+  "name": "presentation",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "vite build --ssrManifest --outDir dist/client",
+    "build:server": "vite build --ssr ./src/server.ts --outDir dist/server",
+    "dev": "storybook dev -p 6006",
+    "test": "jest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "d-flow-ssr": "github:digitao-io/d-flow-ssr",
+    "vue": "^3.5.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "@storybook/addon-essentials": "^8.3.3",
+    "@storybook/vue3": "^8.3.3",
+    "@storybook/vue3-vite": "^8.3.3",
+    "@stylistic/eslint-plugin": "^2.8.0",
+    "@types/jest": "^29.5.13",
+    "@types/node": "^22.7.2",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "eslint": "^9.11.1",
+    "eslint-plugin-vue": "^9.28.0",
+    "jest": "^29.7.0",
+    "storybook": "^8.3.3",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8",
+    "vue-tsc": "^2.1.6"
+  }
+}

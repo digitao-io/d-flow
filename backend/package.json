@@ -10,11 +10,14 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
+  "dependencies": {
+    "d-flow-backend": "github:digitao-io/d-flow-backend"
+  },
   "devDependencies": {
     "@eslint/js": "^9.11.1",
     "@stylistic/eslint-plugin": "^2.8.0",
     "@types/jest": "^29.5.13",
-    "@types/node": "^22.6.1",
+    "@types/node": "^22.7.2",
     "@types/supertest": "^6.0.2",
     "@typescript-eslint/eslint-plugin": "^8.7.0",
     "@typescript-eslint/parser": "^8.7.0",
@@ -23,9 +26,6 @@
     "supertest": "^7.0.0",
     "ts-jest": "^29.2.5",
     "tsx": "^4.19.1",
-    "typescript": "^5.5.4"
-  },
-  "dependencies": {
-    "d-flow-backend": "github:digitao-io/d-flow-backend"
+    "typescript": "^5.6.2"
   }
 }
